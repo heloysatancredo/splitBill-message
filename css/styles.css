@@ -1,0 +1,39 @@
+.items {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.items:first-child {
+    padding-left: 0;
+}
+
+.items a {
+    text-decoration: none;
+}
+
+.items a {
+    color: teal;
+}
+
+ul {
+    display: flex;
+}
+
+.content {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 92vw;
+}
+
+.sec {
+    flex-grow: 1;
+    flex-basis: auto;
+    border: 1px solid teal;
+    padding: 5px;
+}
+
+.sec2 {
+    background-color: rgb(183, 247, 236);
+}

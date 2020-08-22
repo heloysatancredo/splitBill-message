@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+    <title>Practise Zone</title>
+  </head>
+  <body>
+    <header class="headings">
+      <nav class="navigation">
+        <ul>
+          <li class="items item1"><a href="#">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="sec sec1">
+        <h1 class="heading">Tip Calculator</h1>
+        <label for="inpGuests">Number of Guests: </label>
+        <input
+          type="number"
+          id="inpGuests"
+          required
+          min="1"
+          max="20"
+        /><br /><br />
+        <label for="inpBill">Please Enter the Bill Amount: </label>
+        <input type="text" id="inpBill" required /><br /><br />
+        <label for="inpTip"
+          >Please Enter the Percent Tip you would Like to Add (ie: 15, 20,
+          etc.):
+        </label>
+        <input
+          type="number"
+          id="inpTip"
+          required
+          min="0"
+          max="100"
+        /><br /><br />
+        <button id="calcTip">Calculate the Total Bill w/Tip</button>
+        <button id="splitBill">Split the Bill Evenly</button>
+        <p id="msgArea"></p>
+      </div>
+      <div class="sec sec2">
+        <h1 class="heading">Feedback Form</h1>
+        <label for="emailAddr">Please Provide your Email Address</label>
+        <input type="email" id="emailAddr" required /><br /><br />
+        <label for="usrMessage">Enter your Comment or Question Below</label
+        ><br />
+        <textarea id="usrMessage" required rows="4" cols="75"></textarea
+        ><br /><br />
+        <label for="mList">Would you like to join our mailing list?</label>
+        <input type="checkbox" name="mList" id="mList" /><br /><br />
+        <button id="submit">Submit</button><br /><br />
+        <p id="submitMsg"></p>
+      </div>
+    </main>
+  </body>
+</html>
